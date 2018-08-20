@@ -1,8 +1,8 @@
 {
-  "name": "core-next-object",
-  "version": "2.5.3",
+  "name": "next-core-object",
+  "version": "2.5.4",
   "description": "The Augmented.js Next - Object and Events.",
-  "main": "dist/core-next-object.js",
+  "main": "dist/next-core-object.js",
   "scripts": {
     "dev": "webpack --mode development --module-bind js=babel-loader --progress",
     "build": "webpack --mode production --module-bind js=babel-loader --progress",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Augmentedjs/core-next-object.git"
+    "url": "git+https://github.com/Augmentedjs/next-core-object.git"
   },
   "keywords": [
     "augmentedjs",
@@ -47,7 +47,7 @@
     "next-core-utilities": "^2.5.3"
   },
   "bugs": {
-    "url": "https://github.com/Augmentedjs/core-next-object/issues"
+    "url": "https://github.com/Augmentedjs/next-core-object/issues"
   },
   "homepage": "http://www.augmentedjs.com"
 }

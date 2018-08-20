@@ -8,7 +8,7 @@ global.navigator = {
   userAgent: 'node.js'
 };
 
-global.Obj = require("../dist/core-next-object.js");
+global.Obj = require("../dist/next-core-object.js");
 
 const chai = require("chai");
 global.chai = chai;

@@ -7,9 +7,9 @@ module.exports = {
   target: "web",
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'core-next-object.js',
+    filename: 'next-core-object.js',
     publicPath: '/dist/',
-    library: "core-next-object",
+    library: "next-core-object",
     globalObject: 'this',
     libraryTarget: "umd",
     umdNamedDefine: true
@@ -27,10 +27,10 @@ module.exports = {
   },
   externals: {
     'core-next-utilities': {
-      commonjs: 'core-next-utilities',
-      commonjs2: 'core-next-utilities',
-      amd: 'core-next-utilities',
-      root: 'core-next-utilities'
+      commonjs: 'next-core-utilities',
+      commonjs2: 'next-core-utilities',
+      amd: 'next-core-utilities',
+      root: 'next-core-utilities'
     },
     'lodash.bind': {
       commonjs: 'lodash.bind',
