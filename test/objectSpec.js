@@ -53,7 +53,12 @@ describe("Given an AugmentedObject", () => {
     });
 
     describe("Given an events", () => {
-      const cb = () => { console.log("x"); return "I'm here!"; };
+      const cb = (data) => {
+        AugmentedObject.x = "I'm here!";
+        AugmentedObject.data = data;
+        return "I'm here!";
+      };
+
       describe("Given an persistant events", () => {
         beforeEach(() => {
     			AugmentedObject.on("test", cb, AugmentedObject);
@@ -76,9 +81,15 @@ describe("Given an AugmentedObject", () => {
           expect(AugmentedObject.events.test).to.not.be.undefined;
         });
 
-        it("can trigger an event", () => {
-          const x = AugmentedObject.trigger("test");
-          expect(x).to.not.be.undefined;
+        it("can trigger an event", async () => {
+          const x = await AugmentedObject.trigger("test");
+          expect(AugmentedObject.x).to.deep.equal("I'm here!");
+        });
+
+        it("can trigger an event with args", async () => {
+          const x = await AugmentedObject.trigger("test", "some data");
+          expect(AugmentedObject.x).to.deep.equal("I'm here!");
+          expect(AugmentedObject.data).to.deep.equal("some data");
         });
       });
       describe("Given an event used once", () => {
@@ -96,9 +107,9 @@ describe("Given an AugmentedObject", () => {
           expect(AugmentedObject.events.testOnce).to.not.be.undefined;
         });
 
-        it("can trigger an event once", () => {
-          const x = AugmentedObject.once("testOnce");
-          const y = AugmentedObject.trigger("testOnce");
+        it("can trigger an event once", async () => {
+          const x = await AugmentedObject.once("testOnce");
+          const y = await AugmentedObject.trigger("testOnce");
           expect(y).to.not.be.undefined;
           expect(AugmentedObject.events.testOnce).to.be.undefined;
         });

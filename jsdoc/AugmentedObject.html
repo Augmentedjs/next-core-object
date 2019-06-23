@@ -67,6 +67,13 @@
 									<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Globals<b class="caret"></b></a>
 									<ul class="dropdown-menu">
 											<li><a href="global.html#Configuration">Configuration</a></li>
+											<li><a href="global.html#EVENT_SPLITTER">EVENT_SPLITTER</a></li>
+											<li><a href="global.html#eventsApi">eventsApi</a></li>
+											<li><a href="global.html#internalOn">internalOn</a></li>
+											<li><a href="global.html#offApi">offApi</a></li>
+											<li><a href="global.html#onApi">onApi</a></li>
+											<li><a href="global.html#triggerApi">triggerApi</a></li>
+											<li><a href="global.html#triggerEvents">triggerEvents</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -111,7 +118,8 @@
 </dt>
 <dd class="symbol-details class" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Augmented Object<br>Base class for other classes to extend from</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Augmented Object<br>
+			Base class for other classes to extend from</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -153,7 +161,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="object.js.html">object.js</a>, <a href="object.js.html#line-10">line 10</a></p>
+									<p class="form-control-static"><a href="object.js.html">object.js</a>, <a href="object.js.html#line-11">line 11</a></p>
 								</div>
 							</div>
 			
@@ -335,7 +343,10 @@
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Trigger one or many events, firing all bound callbacks. Callbacks are<br>passed the same arguments as <code>trigger</code> is, apart from the event name<br>(unless you're listening on <code>&quot;all&quot;</code>, which will cause your callback to<br>receive the true name of the event as the first argument).</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Trigger one or many events, firing all bound callbacks. Callbacks are<br>
+			passed the same arguments as <code>trigger</code> is, apart from the event name<br>
+			(unless you're listening on <code>&quot;all&quot;</code>, which will cause your callback to<br>
+			receive the true name of the event as the first argument).</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -411,7 +422,10 @@
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Bind an event to only be triggered a single time. After the first time<br>the callback is invoked, its listener will be removed. If multiple events<br>are passed in using the space-separated syntax, the handler will fire<br>once for each event, not once for a combination of all events.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Bind an event to only be triggered a single time. After the first time<br>
+			the callback is invoked, its listener will be removed. If multiple events<br>
+			are passed in using the space-separated syntax, the handler will fire<br>
+			once for each event, not once for a combination of all events.</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -491,7 +505,10 @@
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Remove one or many callbacks. If <code>context</code> is null, removes all<br>callbacks with that function. If <code>callback</code> is null, removes all<br>callbacks for the event. If <code>name</code> is null, removes all bound<br>callbacks for all events.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Remove one or many callbacks. If <code>context</code> is null, removes all<br>
+			callbacks with that function. If <code>callback</code> is null, removes all<br>
+			callbacks for the event. If <code>name</code> is null, removes all bound<br>
+			callbacks for all events.</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -571,7 +588,8 @@
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Tell this object to stop listening to either specific events ... or<br>to every object it's currently listening to.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Tell this object to stop listening to either specific events ... or<br>
+			to every object it's currently listening to.</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -651,7 +669,8 @@
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Bind an event to a <code>callback</code> function. Passing <code>&quot;all&quot;</code> will bind<br>the callback to all events fired.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Bind an event to a <code>callback</code> function. Passing <code>&quot;all&quot;</code> will bind<br>
+			the callback to all events fired.</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -716,6 +735,88 @@
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
 									<p class="form-control-static"><a href="object.js.html">object.js</a>, <a href="object.js.html#line-163">line 163</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="listenTo" class="function public"><span class="name">listenTo</span><span class="signature-params">( <span class="signature-param">obj</span>, <span class="signature-param">name</span>, <span class="signature-param">callback</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Inversion-of-control versions of <code>on</code>. Tell <em>this</em> object to listen to<br>
+			an event in another object... keeping track of what it's listening to<br>
+			for easier unbinding later.</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>obj</code></td>
+							<td><span class="param-type">object</span></td>
+							<td class="last">
+									<p>The object to stop listening to</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>name</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>The name of the event</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>callback</code></td>
+							<td><span class="param-type">function</span></td>
+							<td class="last">
+									<p>The callback to evoke</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">object</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>Returns this context</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="object.js.html">object.js</a>, <a href="object.js.html#line-176">line 176</a></p>
 								</div>
 							</div>
 			
@@ -805,86 +906,6 @@
 					</form>
 			</div>	</div>
 </dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="listenTo" class="function public"><span class="name">listenTo</span><span class="signature-params">( <span class="signature-param">obj</span>, <span class="signature-param">name</span>, <span class="signature-param">callback</span>&nbsp;)</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Inversion-of-control versions of <code>on</code>. Tell <em>this</em> object to listen to<br>an event in another object... keeping track of what it's listening to<br>for easier unbinding later.</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>obj</code></td>
-							<td><span class="param-type">object</span></td>
-							<td class="last">
-									<p>The object to stop listening to</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>name</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>The name of the event</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>callback</code></td>
-							<td><span class="param-type">function</span></td>
-							<td class="last">
-									<p>The callback to evoke</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">object</span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"><p>Returns this context</p></div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="object.js.html">object.js</a>, <a href="object.js.html#line-176">line 176</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
 									</dl>
 							</article>
 					</section>
@@ -896,7 +917,7 @@
 	</div>
 	<footer>
 				<div class="footer-option"><a href='http://www.augmentedjs.com'>Augmented.js Homepage</a></div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Aug 19th 2018 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.2</a> on Sat Jun 22nd 2019 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

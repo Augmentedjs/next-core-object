@@ -1,10 +1,10 @@
-<!-- start:readme.hbs -->
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Augmented.js Next Core</title>
+		<title>events.js</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -43,7 +43,7 @@
 			</style>
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"ddd MMM Do YYYY","systemName":"Augmented.js Next Core","systemSummary":"Augmented.js Next Core - Simply Development.","systemLogo":"img/jensen-silo-circle-small.png","systemColor":"#607D8B","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"<a href='http://www.augmentedjs.com'>Augmented.js Homepage</a>","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":true,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":true,"favicon":"favicon.png","stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"logoFile":"public/images/jensen-silo-circle-small.png","navType":"vertical","protocol":"html://"};
-			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -100,21 +100,173 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">readme</span>
-				<h1><span class="name">Augmented.js Next Core</span></h1>
-				<div class="summary"><p>Augmented.js Next Core - Simply Development.</p></div>			</div>
+				<span class="kind">source</span>
+				<h1><span class="name">events.js</span></h1>
+			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-9 main-content">
-		<section class="readme-section">
-			<article><h1>next-core-object</h1>
-<p>AUGmented.js Next Core - Object and Events</p></article>
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">// Events
+
+/**
+ * Regular expression used to split event strings.
+ */
+export const EVENT_SPLITTER = /\s+/;
+
+/**
+ * Iterates over the standard `event, callback` (as well as the fancy multiple
+ * space-separated events `"change blur", callback` and jQuery-style event
+ * maps `{event: callback}`).
+ */
+export const eventsApi = (iteratee, events, name, callback, ...opts) => {
+  //console.debug("opts", opts);
+  let i = 0, names;
+  if (name &amp;&amp; typeof name === "object") {
+    // Handle event maps.
+    if (callback !== void 0 &amp;&amp; "context" in opts &amp;&amp; opts.context === void 0) {
+      opts.context = callback;
+    }
+    for (names = Object.keys(name); i &lt; names.length; i++) {
+      events = eventsApi(iteratee, events, names[i], name[names[i]], ...opts);
+    }
+  } else if (name &amp;&amp; EVENT_SPLITTER.test(name)) {
+    // Handle space-separated event names by delegating them individually.
+    for (names = name.split(EVENT_SPLITTER); i &lt; names.length; i++) {
+      events = iteratee(events, names[i], callback, ...opts);
+    }
+  } else {
+    // Finally, standard events.
+    events = iteratee(events, name, callback, ...opts);
+  }
+  return events;
+};
+
+/**
+ * Guard the `listening` argument from the public API.
+ */
+export const internalOn = (obj, name, callback, context, listening) => {
+  obj._events = eventsApi(onApi, obj._events || {}, name, callback, {
+    context: context,
+    ctx: obj,
+    listening: listening
+  });
+
+  if (listening) {
+    const listeners = obj._listeners || (obj._listeners = {});
+    listeners[listening.id] = listening;
+  }
+  return obj;
+};
+
+/**
+ * The reducing API that adds a callback to the `events` object.
+ */
+export const onApi = (events, name, callback, options) => {
+  if (callback) {
+    const handlers = events[name] || (events[name] = []);
+    const context = options.context, ctx = options.ctx, listening = options.listening;
+    if (listening) {
+      listening.count++;
+    }
+    handlers.push({ callback: callback, context: context, ctx: context || ctx, listening: listening });
+  }
+  return events;
+};
+
+/**
+ * The reducing API that removes a callback from the `events` object.
+ */
+export const offApi = (events, name, callback, options) => {
+  if (!events) {
+    return;
+  }
+  let i = 0, listening;
+  const context = options.context, listeners = options.listeners;
+
+  // Delete all events listeners and "drop" events.
+  if (!name &amp;&amp; !callback &amp;&amp; !context) {
+    const ids = Object.keys(listeners);
+    for (; i &lt; ids.length; i++) {
+      listening = listeners[ids[i]];
+      delete listeners[listening.id];
+      delete listening.listeningTo[listening.objId];
+    }
+    return;
+  }
+
+  let names = name ? [name] : Object.keys(events);
+  for (; i &lt; names.length; i++) {
+    name = names[i];
+    const handlers = events[name];
+
+    // Bail out if there are no events stored.
+    if (!handlers) break;
+
+    // Replace events if there are any remaining.  Otherwise, clean up.
+    const remaining = [];
+    let j = 0;
+    for (j = 0; j &lt; handlers.length; j++) {
+      const handler = handlers[j];
+      if (
+        callback &amp;&amp; callback !== handler.callback &amp;&amp;
+          callback !== handler.callback._callback ||
+            context &amp;&amp; context !== handler.context
+      ) {
+        remaining.push(handler);
+      } else {
+        listening = handler.listening;
+        if (listening &amp;&amp; --listening.count === 0) {
+          delete listeners[listening.id];
+          delete listening.listeningTo[listening.objId];
+        }
+      }
+    }
+
+    // Update tail event if the list has any events.  Otherwise, clean up.
+    if (remaining.length) {
+      events[name] = remaining;
+    } else {
+      delete events[name];
+    }
+  }
+  return events;
+};
+
+/**
+ * Handles triggering the appropriate event callbacks.
+ */
+export const triggerApi = (objEvents, name, callback, ...args) => {
+  if (objEvents) {
+    const events = objEvents[name];
+    let allEvents = objEvents.all;
+    if (events &amp;&amp; allEvents) {
+      allEvents = allEvents.slice();
+    }
+    if (events) {
+      triggerEvents(events, ...args);
+    }
+    if (allEvents) {
+      triggerEvents(allEvents, [name].concat(...args));
+    }
+  }
+  return objEvents;
+};
+
+/**
+ * Internal dispatch function for triggering events.
+ */
+export const triggerEvents = (events, ...args) => {
+  //console.debug("triggerEvents", ...args);
+  let ev, i = -1;
+  const l = events.length;
+  while (++i &lt; l) (ev = events[i]).callback.apply(ev.ctx, ...args); return;
+};
+</code></pre>
 		</section>
 			</div>
-				<div class="col-md-3 side-content">
-					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
-				</div>
 		</div>
 	</div>
 	<footer>
@@ -146,4 +298,4 @@
 	
 </body>
 </html>
-<!-- end:readme.hbs -->
+<!-- end:source.tmpl.hbs -->

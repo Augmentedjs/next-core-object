@@ -61,9 +61,10 @@
         "AugmentedObject.html": [
           "augment",
           "augmentedobject",
+          "base",
           "class",
           "extend",
-          "objectbas"
+          "object"
         ],
         "AugmentedObject.html#options": [
           "augmentedobject#opt",
@@ -84,7 +85,6 @@
         ],
         "AugmentedObject.html#trigger": [
           "apart",
-          "arepass",
           "arg",
           "argument",
           "augmentedobject#trigg",
@@ -98,13 +98,14 @@
           "listen",
           "mani",
           "name",
-          "name(unless",
           "on",
+          "pass",
           "quot;all&quot",
+          "receiv",
           "same",
-          "torec",
           "trigger",
           "true",
+          "unless",
           "you'r"
         ],
         "AugmentedObject.html#once": [
@@ -115,8 +116,7 @@
           "context",
           "each",
           "event",
-          "eventsar",
-          "fireonc",
+          "fire",
           "first",
           "function",
           "handler",
@@ -132,14 +132,12 @@
           "space",
           "syntax",
           "time",
-          "timeth",
           "trigger",
           "us"
         ],
         "AugmentedObject.html#off": [
-          "allcallback",
           "augmentedobject#off",
-          "boundcallback",
+          "bound",
           "callback",
           "context",
           "event",
@@ -161,7 +159,6 @@
           "name",
           "obj",
           "object",
-          "orto",
           "specif",
           "stop",
           "stoplisten",
@@ -170,7 +167,6 @@
         "AugmentedObject.html#on": [
           "augmentedobject#on",
           "bind",
-          "bindth",
           "callback",
           "context",
           "event",
@@ -179,18 +175,6 @@
           "name",
           "pass",
           "quot;all&quot"
-        ],
-        "AugmentedObject.html#listenToOnce": [
-          "augmentedobject#listentoonc",
-          "callback",
-          "control",
-          "function",
-          "invers",
-          "listentoonc",
-          "name",
-          "obj",
-          "onc",
-          "version"
         ],
         "AugmentedObject.html#listenTo": [
           "anoth",
@@ -210,10 +194,20 @@
           "obj",
           "object",
           "tell",
-          "toan",
-          "tofor",
           "track",
           "unbind",
+          "version"
+        ],
+        "AugmentedObject.html#listenToOnce": [
+          "augmentedobject#listentoonc",
+          "callback",
+          "control",
+          "function",
+          "invers",
+          "listentoonc",
+          "name",
+          "obj",
+          "onc",
           "version"
         ]
       },
@@ -238,7 +232,7 @@
                       "docs": {
                         "AugmentedObject.html": {
                           "ref": "AugmentedObject.html",
-                          "tf": 10
+                          "tf": 8.333333333333332
                         }
                       },
                       "e": {
@@ -470,7 +464,7 @@
                   "docs": {
                     "AugmentedObject.html#trigger": {
                       "ref": "AugmentedObject.html#trigger",
-                      "tf": 1.9230769230769231
+                      "tf": 1.8518518518518516
                     }
                   }
                 }
@@ -479,26 +473,6 @@
           },
           "r": {
             "docs": {},
-            "e": {
-              "docs": {},
-              "p": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "s": {
-                    "docs": {},
-                    "s": {
-                      "docs": {
-                        "AugmentedObject.html#trigger": {
-                          "ref": "AugmentedObject.html#trigger",
-                          "tf": 1.9230769230769231
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "g": {
               "docs": {
                 "AugmentedObject.html#trigger": {
@@ -518,42 +492,7 @@
                         "docs": {
                           "AugmentedObject.html#trigger": {
                             "ref": "AugmentedObject.html#trigger",
-                            "tf": 3.8461538461538463
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "l": {
-            "docs": {},
-            "l": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "l": {
-                    "docs": {},
-                    "l": {
-                      "docs": {},
-                      "b": {
-                        "docs": {},
-                        "a": {
-                          "docs": {},
-                          "c": {
-                            "docs": {},
-                            "k": {
-                              "docs": {
-                                "AugmentedObject.html#off": {
-                                  "ref": "AugmentedObject.html#off",
-                                  "tf": 5.263157894736842
-                                }
-                              }
-                            }
+                            "tf": 3.7037037037037033
                           }
                         }
                       }
@@ -573,7 +512,7 @@
                   "docs": {
                     "AugmentedObject.html#listenTo": {
                       "ref": "AugmentedObject.html#listenTo",
-                      "tf": 2.7777777777777777
+                      "tf": 3.125
                     }
                   }
                 }
@@ -606,7 +545,7 @@
                     "docs": {
                       "AugmentedObject.html#once": {
                         "ref": "AugmentedObject.html#once",
-                        "tf": 2
+                        "tf": 1.9230769230769231
                       }
                     }
                   }
@@ -629,7 +568,7 @@
                         },
                         "AugmentedObject.html#off": {
                           "ref": "AugmentedObject.html#off",
-                          "tf": 35.964912280701746
+                          "tf": 35.83333333333333
                         },
                         "AugmentedObject.html#on": {
                           "ref": "AugmentedObject.html#on",
@@ -645,13 +584,13 @@
                     "docs": {},
                     "l": {
                       "docs": {
+                        "AugmentedObject.html#listenTo": {
+                          "ref": "AugmentedObject.html#listenTo",
+                          "tf": 3.125
+                        },
                         "AugmentedObject.html#listenToOnce": {
                           "ref": "AugmentedObject.html#listenToOnce",
                           "tf": 12.5
-                        },
-                        "AugmentedObject.html#listenTo": {
-                          "ref": "AugmentedObject.html#listenTo",
-                          "tf": 2.7777777777777777
                         }
                       }
                     }
@@ -674,7 +613,7 @@
                     },
                     "AugmentedObject.html": {
                       "ref": "AugmentedObject.html",
-                      "tf": 130
+                      "tf": 126.66666666666666
                     }
                   }
                 }
@@ -697,15 +636,15 @@
                         "docs": {
                           "AugmentedObject.html#trigger": {
                             "ref": "AugmentedObject.html#trigger",
-                            "tf": 5.769230769230769
+                            "tf": 5.555555555555555
                           },
                           "AugmentedObject.html#once": {
                             "ref": "AugmentedObject.html#once",
-                            "tf": 27
+                            "tf": 26.923076923076923
                           },
                           "AugmentedObject.html#off": {
                             "ref": "AugmentedObject.html#off",
-                            "tf": 38.59649122807017
+                            "tf": 45.83333333333333
                           },
                           "AugmentedObject.html#stopListening": {
                             "ref": "AugmentedObject.html#stopListening",
@@ -715,12 +654,12 @@
                             "ref": "AugmentedObject.html#on",
                             "tf": 43.33333333333333
                           },
-                          "AugmentedObject.html#listenToOnce": {
-                            "ref": "AugmentedObject.html#listenToOnce",
-                            "tf": 25
-                          },
                           "AugmentedObject.html#listenTo": {
                             "ref": "AugmentedObject.html#listenTo",
+                            "tf": 25
+                          },
+                          "AugmentedObject.html#listenToOnce": {
+                            "ref": "AugmentedObject.html#listenToOnce",
                             "tf": 25
                           }
                         }
@@ -736,7 +675,7 @@
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 1.9230769230769231
+                    "tf": 1.8518518518518516
                   }
                 }
               }
@@ -756,7 +695,7 @@
                       "docs": {
                         "AugmentedObject.html#stopListening": {
                           "ref": "AugmentedObject.html#stopListening",
-                          "tf": 4.545454545454546
+                          "tf": 5
                         }
                       }
                     }
@@ -862,7 +801,7 @@
                   "docs": {
                     "AugmentedObject.html#once": {
                       "ref": "AugmentedObject.html#once",
-                      "tf": 2
+                      "tf": 1.9230769230769231
                     }
                   }
                 }
@@ -873,13 +812,13 @@
                   "docs": {},
                   "s": {
                     "docs": {
+                      "AugmentedObject.html#listenTo": {
+                        "ref": "AugmentedObject.html#listenTo",
+                        "tf": 3.125
+                      },
                       "AugmentedObject.html#listenToOnce": {
                         "ref": "AugmentedObject.html#listenToOnce",
                         "tf": 12.5
-                      },
-                      "AugmentedObject.html#listenTo": {
-                        "ref": "AugmentedObject.html#listenTo",
-                        "tf": 2.7777777777777777
                       }
                     }
                   }
@@ -893,11 +832,11 @@
               "docs": {
                 "AugmentedObject.html#stopListening": {
                   "ref": "AugmentedObject.html#stopListening",
-                  "tf": 4.545454545454546
+                  "tf": 5
                 },
                 "AugmentedObject.html#listenTo": {
                   "ref": "AugmentedObject.html#listenTo",
-                  "tf": 2.7777777777777777
+                  "tf": 3.125
                 }
               }
             }
@@ -927,7 +866,7 @@
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 35.25641025641025
+                    "tf": 37.03703703703703
                   },
                   "AugmentedObject.html#once": {
                     "ref": "AugmentedObject.html#once",
@@ -935,7 +874,7 @@
                   },
                   "AugmentedObject.html#off": {
                     "ref": "AugmentedObject.html#off",
-                    "tf": 35.964912280701746
+                    "tf": 35.83333333333333
                   },
                   "AugmentedObject.html#stopListening": {
                     "ref": "AugmentedObject.html#stopListening",
@@ -945,39 +884,13 @@
                     "ref": "AugmentedObject.html#on",
                     "tf": 33.33333333333333
                   },
-                  "AugmentedObject.html#listenToOnce": {
-                    "ref": "AugmentedObject.html#listenToOnce",
-                    "tf": 25
-                  },
                   "AugmentedObject.html#listenTo": {
                     "ref": "AugmentedObject.html#listenTo",
                     "tf": 25
-                  }
-                },
-                "(": {
-                  "docs": {},
-                  "u": {
-                    "docs": {},
-                    "n": {
-                      "docs": {},
-                      "l": {
-                        "docs": {},
-                        "e": {
-                          "docs": {},
-                          "s": {
-                            "docs": {},
-                            "s": {
-                              "docs": {
-                                "AugmentedObject.html#trigger": {
-                                  "ref": "AugmentedObject.html#trigger",
-                                  "tf": 1.9230769230769231
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
+                  },
+                  "AugmentedObject.html#listenToOnce": {
+                    "ref": "AugmentedObject.html#listenToOnce",
+                    "tf": 25
                   }
                 }
               }
@@ -991,7 +904,7 @@
                 "docs": {
                   "AugmentedObject.html#off": {
                     "ref": "AugmentedObject.html#off",
-                    "tf": 7.894736842105263
+                    "tf": 7.5
                   }
                 }
               }
@@ -1016,6 +929,23 @@
                 }
               }
             },
+            "c": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "v": {
+                    "docs": {
+                      "AugmentedObject.html#trigger": {
+                        "ref": "AugmentedObject.html#trigger",
+                        "tf": 1.8518518518518516
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "m": {
               "docs": {},
               "o": {
@@ -1024,11 +954,11 @@
                   "docs": {
                     "AugmentedObject.html#once": {
                       "ref": "AugmentedObject.html#once",
-                      "tf": 2
+                      "tf": 1.9230769230769231
                     },
                     "AugmentedObject.html#off": {
                       "ref": "AugmentedObject.html#off",
-                      "tf": 10.526315789473683
+                      "tf": 10
                     }
                   }
                 }
@@ -1065,7 +995,7 @@
                   "docs": {
                     "AugmentedObject.html#once": {
                       "ref": "AugmentedObject.html#once",
-                      "tf": 2
+                      "tf": 1.9230769230769231
                     }
                   }
                 }
@@ -1080,7 +1010,7 @@
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 1.9230769230769231
+                    "tf": 1.8518518518518516
                   }
                 }
               }
@@ -1096,7 +1026,7 @@
                   "docs": {
                     "AugmentedObject.html#once": {
                       "ref": "AugmentedObject.html#once",
-                      "tf": 2
+                      "tf": 1.9230769230769231
                     }
                   }
                 }
@@ -1113,7 +1043,7 @@
                   "docs": {
                     "AugmentedObject.html#once": {
                       "ref": "AugmentedObject.html#once",
-                      "tf": 2
+                      "tf": 1.9230769230769231
                     }
                   }
                 }
@@ -1129,7 +1059,7 @@
                     "docs": {
                       "AugmentedObject.html#stopListening": {
                         "ref": "AugmentedObject.html#stopListening",
-                        "tf": 4.545454545454546
+                        "tf": 5
                       }
                     }
                   }
@@ -1149,7 +1079,7 @@
                     "docs": {
                       "AugmentedObject.html#once": {
                         "ref": "AugmentedObject.html#once",
-                        "tf": 2
+                        "tf": 1.9230769230769231
                       }
                     }
                   }
@@ -1165,7 +1095,7 @@
                 "docs": {
                   "AugmentedObject.html#stopListening": {
                     "ref": "AugmentedObject.html#stopListening",
-                    "tf": 4.545454545454546
+                    "tf": 5
                   }
                 },
                 "l": {
@@ -1260,19 +1190,19 @@
                     "docs": {
                       "AugmentedObject.html#trigger": {
                         "ref": "AugmentedObject.html#trigger",
-                        "tf": 1.9230769230769231
+                        "tf": 1.8518518518518516
                       },
                       "AugmentedObject.html#once": {
                         "ref": "AugmentedObject.html#once",
-                        "tf": 2
+                        "tf": 1.9230769230769231
                       },
                       "AugmentedObject.html#stopListening": {
                         "ref": "AugmentedObject.html#stopListening",
-                        "tf": 9.090909090909092
+                        "tf": 10
                       },
                       "AugmentedObject.html#listenTo": {
                         "ref": "AugmentedObject.html#listenTo",
-                        "tf": 5.555555555555555
+                        "tf": 6.25
                       }
                     },
                     "t": {
@@ -1315,8 +1245,64 @@
                   "docs": {
                     "AugmentedObject.html#listenTo": {
                       "ref": "AugmentedObject.html#listenTo",
-                      "tf": 2.7777777777777777
+                      "tf": 3.125
                     }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "b": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "AugmentedObject.html": {
+                    "ref": "AugmentedObject.html",
+                    "tf": 8.333333333333332
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "u": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "d": {
+                  "docs": {
+                    "AugmentedObject.html#trigger": {
+                      "ref": "AugmentedObject.html#trigger",
+                      "tf": 1.8518518518518516
+                    },
+                    "AugmentedObject.html#off": {
+                      "ref": "AugmentedObject.html#off",
+                      "tf": 2.5
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "d": {
+                "docs": {
+                  "AugmentedObject.html#once": {
+                    "ref": "AugmentedObject.html#once",
+                    "tf": 1.9230769230769231
+                  },
+                  "AugmentedObject.html#on": {
+                    "ref": "AugmentedObject.html#on",
+                    "tf": 10
                   }
                 }
               }
@@ -1337,7 +1323,7 @@
                     "docs": {
                       "AugmentedObject.html": {
                         "ref": "AugmentedObject.html",
-                        "tf": 10
+                        "tf": 8.333333333333332
                       }
                     }
                   }
@@ -1359,19 +1345,19 @@
                     },
                     "AugmentedObject.html#trigger": {
                       "ref": "AugmentedObject.html#trigger",
-                      "tf": 5.769230769230769
+                      "tf": 5.555555555555555
                     },
                     "AugmentedObject.html#once": {
                       "ref": "AugmentedObject.html#once",
-                      "tf": 6
+                      "tf": 7.6923076923076925
                     },
                     "AugmentedObject.html#off": {
                       "ref": "AugmentedObject.html#off",
-                      "tf": 5.263157894736842
+                      "tf": 5
                     },
                     "AugmentedObject.html#stopListening": {
                       "ref": "AugmentedObject.html#stopListening",
-                      "tf": 4.545454545454546
+                      "tf": 5
                     },
                     "AugmentedObject.html#on": {
                       "ref": "AugmentedObject.html#on",
@@ -1379,21 +1365,7 @@
                     },
                     "AugmentedObject.html#listenTo": {
                       "ref": "AugmentedObject.html#listenTo",
-                      "tf": 2.7777777777777777
-                    }
-                  },
-                  "s": {
-                    "docs": {},
-                    "a": {
-                      "docs": {},
-                      "r": {
-                        "docs": {
-                          "AugmentedObject.html#once": {
-                            "ref": "AugmentedObject.html#once",
-                            "tf": 2
-                          }
-                        }
-                      }
+                      "tf": 3.125
                     }
                   }
                 }
@@ -1408,7 +1380,7 @@
                 "docs": {
                   "AugmentedObject.html#once": {
                     "ref": "AugmentedObject.html#once",
-                    "tf": 2
+                    "tf": 1.9230769230769231
                   }
                 }
               }
@@ -1423,7 +1395,7 @@
                     "docs": {
                       "AugmentedObject.html#listenTo": {
                         "ref": "AugmentedObject.html#listenTo",
-                        "tf": 2.7777777777777777
+                        "tf": 3.125
                       }
                     }
                   }
@@ -1442,12 +1414,12 @@
                   "ref": "AugmentedObject.html#stopListening",
                   "tf": 25
                 },
-                "AugmentedObject.html#listenToOnce": {
-                  "ref": "AugmentedObject.html#listenToOnce",
-                  "tf": 25
-                },
                 "AugmentedObject.html#listenTo": {
                   "ref": "AugmentedObject.html#listenTo",
+                  "tf": 25
+                },
+                "AugmentedObject.html#listenToOnce": {
+                  "ref": "AugmentedObject.html#listenToOnce",
                   "tf": 25
                 }
               },
@@ -1457,31 +1429,21 @@
                   "docs": {},
                   "t": {
                     "docs": {
+                      "AugmentedObject.html": {
+                        "ref": "AugmentedObject.html",
+                        "tf": 8.333333333333332
+                      },
                       "AugmentedObject.html#initialize": {
                         "ref": "AugmentedObject.html#initialize",
                         "tf": 25
                       },
                       "AugmentedObject.html#stopListening": {
                         "ref": "AugmentedObject.html#stopListening",
-                        "tf": 9.090909090909092
+                        "tf": 10
                       },
                       "AugmentedObject.html#listenTo": {
                         "ref": "AugmentedObject.html#listenTo",
-                        "tf": 5.555555555555555
-                      }
-                    },
-                    "b": {
-                      "docs": {},
-                      "a": {
-                        "docs": {},
-                        "s": {
-                          "docs": {
-                            "AugmentedObject.html": {
-                              "ref": "AugmentedObject.html",
-                              "tf": 10
-                            }
-                          }
-                        }
+                        "tf": 6.25
                       }
                     }
                   }
@@ -1513,36 +1475,22 @@
             "docs": {
               "AugmentedObject.html#trigger": {
                 "ref": "AugmentedObject.html#trigger",
-                "tf": 1.9230769230769231
+                "tf": 1.8518518518518516
               },
               "AugmentedObject.html#off": {
                 "ref": "AugmentedObject.html#off",
-                "tf": 2.631578947368421
+                "tf": 2.5
               }
             },
             "c": {
               "docs": {
                 "AugmentedObject.html#once": {
                   "ref": "AugmentedObject.html#once",
-                  "tf": 677
+                  "tf": 678.8461538461538
                 },
                 "AugmentedObject.html#listenToOnce": {
                   "ref": "AugmentedObject.html#listenToOnce",
                   "tf": 12.5
-                }
-              }
-            }
-          },
-          "r": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "o": {
-                "docs": {
-                  "AugmentedObject.html#stopListening": {
-                    "ref": "AugmentedObject.html#stopListening",
-                    "tf": 4.545454545454546
-                  }
                 }
               }
             }
@@ -1582,11 +1530,11 @@
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 1.9230769230769231
+                    "tf": 1.8518518518518516
                   },
                   "AugmentedObject.html#off": {
                     "ref": "AugmentedObject.html#off",
-                    "tf": 2.631578947368421
+                    "tf": 2.5
                   }
                 }
               }
@@ -1606,7 +1554,7 @@
                       "docs": {
                         "AugmentedObject.html#once": {
                           "ref": "AugmentedObject.html#once",
-                          "tf": 2
+                          "tf": 1.9230769230769231
                         }
                       }
                     }
@@ -1628,9 +1576,13 @@
                     "ref": "AugmentedObject.html#options",
                     "tf": 25
                   },
+                  "AugmentedObject.html#trigger": {
+                    "ref": "AugmentedObject.html#trigger",
+                    "tf": 1.8518518518518516
+                  },
                   "AugmentedObject.html#once": {
                     "ref": "AugmentedObject.html#once",
-                    "tf": 2
+                    "tf": 1.9230769230769231
                   },
                   "AugmentedObject.html#on": {
                     "ref": "AugmentedObject.html#on",
@@ -1671,7 +1623,7 @@
                           },
                           "AugmentedObject.html#off": {
                             "ref": "AugmentedObject.html#off",
-                            "tf": 112.63157894736842
+                            "tf": 112.5
                           },
                           "AugmentedObject.html#stopListening": {
                             "ref": "AugmentedObject.html#stopListening",
@@ -1681,12 +1633,12 @@
                             "ref": "AugmentedObject.html#on",
                             "tf": 115
                           },
-                          "AugmentedObject.html#listenToOnce": {
-                            "ref": "AugmentedObject.html#listenToOnce",
-                            "tf": 110
-                          },
                           "AugmentedObject.html#listenTo": {
                             "ref": "AugmentedObject.html#listenTo",
+                            "tf": 110
+                          },
+                          "AugmentedObject.html#listenToOnce": {
+                            "ref": "AugmentedObject.html#listenToOnce",
                             "tf": 110
                           }
                         }
@@ -1705,25 +1657,15 @@
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
+                    "tf": 1.8518518518518516
+                  },
+                  "AugmentedObject.html#once": {
+                    "ref": "AugmentedObject.html#once",
                     "tf": 1.9230769230769231
                   },
                   "AugmentedObject.html#on": {
                     "ref": "AugmentedObject.html#on",
                     "tf": 5
-                  }
-                },
-                "o": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "c": {
-                      "docs": {
-                        "AugmentedObject.html#once": {
-                          "ref": "AugmentedObject.html#once",
-                          "tf": 2
-                        }
-                      }
-                    }
                   }
                 }
               },
@@ -1733,89 +1675,11 @@
                   "docs": {
                     "AugmentedObject.html#trigger": {
                       "ref": "AugmentedObject.html#trigger",
-                      "tf": 1.9230769230769231
+                      "tf": 1.8518518518518516
                     },
                     "AugmentedObject.html#once": {
                       "ref": "AugmentedObject.html#once",
-                      "tf": 2
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "b": {
-          "docs": {},
-          "o": {
-            "docs": {},
-            "u": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "d": {
-                  "docs": {
-                    "AugmentedObject.html#trigger": {
-                      "ref": "AugmentedObject.html#trigger",
                       "tf": 1.9230769230769231
-                    }
-                  },
-                  "c": {
-                    "docs": {},
-                    "a": {
-                      "docs": {},
-                      "l": {
-                        "docs": {},
-                        "l": {
-                          "docs": {},
-                          "b": {
-                            "docs": {},
-                            "a": {
-                              "docs": {},
-                              "c": {
-                                "docs": {},
-                                "k": {
-                                  "docs": {
-                                    "AugmentedObject.html#off": {
-                                      "ref": "AugmentedObject.html#off",
-                                      "tf": 2.631578947368421
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "i": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "d": {
-                "docs": {
-                  "AugmentedObject.html#once": {
-                    "ref": "AugmentedObject.html#once",
-                    "tf": 2
-                  },
-                  "AugmentedObject.html#on": {
-                    "ref": "AugmentedObject.html#on",
-                    "tf": 5
-                  }
-                },
-                "t": {
-                  "docs": {},
-                  "h": {
-                    "docs": {
-                      "AugmentedObject.html#on": {
-                        "ref": "AugmentedObject.html#on",
-                        "tf": 5
-                      }
                     }
                   }
                 }
@@ -1851,7 +1715,7 @@
                                   "docs": {
                                     "AugmentedObject.html#trigger": {
                                       "ref": "AugmentedObject.html#trigger",
-                                      "tf": 1.9230769230769231
+                                      "tf": 1.8518518518518516
                                     },
                                     "AugmentedObject.html#on": {
                                       "ref": "AugmentedObject.html#on",
@@ -1873,48 +1737,6 @@
         },
         "t": {
           "docs": {},
-          "o": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "c": {
-                  "docs": {
-                    "AugmentedObject.html#trigger": {
-                      "ref": "AugmentedObject.html#trigger",
-                      "tf": 1.9230769230769231
-                    }
-                  }
-                }
-              }
-            },
-            "a": {
-              "docs": {},
-              "n": {
-                "docs": {
-                  "AugmentedObject.html#listenTo": {
-                    "ref": "AugmentedObject.html#listenTo",
-                    "tf": 2.7777777777777777
-                  }
-                }
-              }
-            },
-            "f": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "AugmentedObject.html#listenTo": {
-                      "ref": "AugmentedObject.html#listenTo",
-                      "tf": 2.7777777777777777
-                    }
-                  }
-                }
-              }
-            }
-          },
           "r": {
             "docs": {},
             "i": {
@@ -1929,11 +1751,11 @@
                       "docs": {
                         "AugmentedObject.html#trigger": {
                           "ref": "AugmentedObject.html#trigger",
-                          "tf": 687.1794871794872
+                          "tf": 687.0370370370371
                         },
                         "AugmentedObject.html#once": {
                           "ref": "AugmentedObject.html#once",
-                          "tf": 2
+                          "tf": 1.9230769230769231
                         }
                       }
                     }
@@ -1947,7 +1769,7 @@
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 1.9230769230769231
+                    "tf": 1.8518518518518516
                   }
                 }
               }
@@ -1960,7 +1782,7 @@
                   "docs": {
                     "AugmentedObject.html#listenTo": {
                       "ref": "AugmentedObject.html#listenTo",
-                      "tf": 2.7777777777777777
+                      "tf": 3.125
                     }
                   }
                 }
@@ -1975,18 +1797,7 @@
                 "docs": {
                   "AugmentedObject.html#once": {
                     "ref": "AugmentedObject.html#once",
-                    "tf": 2
-                  }
-                },
-                "t": {
-                  "docs": {},
-                  "h": {
-                    "docs": {
-                      "AugmentedObject.html#once": {
-                        "ref": "AugmentedObject.html#once",
-                        "tf": 2
-                      }
-                    }
+                    "tf": 3.8461538461538463
                   }
                 }
               }
@@ -2000,13 +1811,61 @@
                 "docs": {
                   "AugmentedObject.html#stopListening": {
                     "ref": "AugmentedObject.html#stopListening",
-                    "tf": 4.545454545454546
+                    "tf": 5
                   },
                   "AugmentedObject.html#listenTo": {
                     "ref": "AugmentedObject.html#listenTo",
-                    "tf": 2.7777777777777777
+                    "tf": 3.125
                   }
                 }
+              }
+            }
+          }
+        },
+        "u": {
+          "docs": {},
+          "n": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "s": {
+                    "docs": {
+                      "AugmentedObject.html#trigger": {
+                        "ref": "AugmentedObject.html#trigger",
+                        "tf": 1.8518518518518516
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "b": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "AugmentedObject.html#listenTo": {
+                        "ref": "AugmentedObject.html#listenTo",
+                        "tf": 3.125
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "s": {
+            "docs": {
+              "AugmentedObject.html#once": {
+                "ref": "AugmentedObject.html#once",
+                "tf": 1.9230769230769231
               }
             }
           }
@@ -2023,7 +1882,7 @@
                   "docs": {
                     "AugmentedObject.html#trigger": {
                       "ref": "AugmentedObject.html#trigger",
-                      "tf": 1.9230769230769231
+                      "tf": 1.8518518518518516
                     }
                   }
                 }
@@ -2047,7 +1906,7 @@
                       "docs": {
                         "AugmentedObject.html#once": {
                           "ref": "AugmentedObject.html#once",
-                          "tf": 2
+                          "tf": 1.9230769230769231
                         }
                       }
                     }
@@ -2057,31 +1916,17 @@
             }
           }
         },
-        "u": {
+        "k": {
           "docs": {},
-          "s": {
-            "docs": {
-              "AugmentedObject.html#once": {
-                "ref": "AugmentedObject.html#once",
-                "tf": 2
-              }
-            }
-          },
-          "n": {
+          "e": {
             "docs": {},
-            "b": {
+            "e": {
               "docs": {},
-              "i": {
-                "docs": {},
-                "n": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "AugmentedObject.html#listenTo": {
-                        "ref": "AugmentedObject.html#listenTo",
-                        "tf": 2.7777777777777777
-                      }
-                    }
+              "p": {
+                "docs": {
+                  "AugmentedObject.html#listenTo": {
+                    "ref": "AugmentedObject.html#listenTo",
+                    "tf": 3.125
                   }
                 }
               }
@@ -2102,13 +1947,13 @@
                     "docs": {},
                     "n": {
                       "docs": {
+                        "AugmentedObject.html#listenTo": {
+                          "ref": "AugmentedObject.html#listenTo",
+                          "tf": 3.125
+                        },
                         "AugmentedObject.html#listenToOnce": {
                           "ref": "AugmentedObject.html#listenToOnce",
                           "tf": 12.5
-                        },
-                        "AugmentedObject.html#listenTo": {
-                          "ref": "AugmentedObject.html#listenTo",
-                          "tf": 2.7777777777777777
                         }
                       }
                     }
@@ -2117,32 +1962,13 @@
               }
             }
           }
-        },
-        "k": {
-          "docs": {},
-          "e": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "p": {
-                "docs": {
-                  "AugmentedObject.html#listenTo": {
-                    "ref": "AugmentedObject.html#listenTo",
-                    "tf": 2.7777777777777777
-                  }
-                }
-              }
-            }
-          }
         }
       },
-      "length": 149
+      "length": 143
     },
     "corpusTokens": [
-      "allcallback",
       "anoth",
       "apart",
-      "arepass",
       "arg",
       "argument",
       "augment",
@@ -2158,10 +1984,9 @@
       "augmentedobject#opt",
       "augmentedobject#stoplisten",
       "augmentedobject#trigg",
+      "base",
       "bind",
-      "bindth",
       "bound",
-      "boundcallback",
       "callback",
       "caus",
       "class",
@@ -2175,10 +2000,8 @@
       "each",
       "easier",
       "event",
-      "eventsar",
       "extend",
       "fire",
-      "fireonc",
       "first",
       "function",
       "global",
@@ -2199,19 +2022,17 @@
       "member",
       "multipl",
       "name",
-      "name(unless",
       "next",
       "null",
       "obj",
       "object",
-      "objectbas",
       "on",
       "onc",
       "option",
-      "orto",
       "pass",
       "quot;all&quot",
       "readm",
+      "receiv",
       "remov",
       "same",
       "separ",
@@ -2224,14 +2045,11 @@
       "syntax",
       "tell",
       "time",
-      "timeth",
-      "toan",
-      "tofor",
-      "torec",
       "track",
       "trigger",
       "true",
       "unbind",
+      "unless",
       "us",
       "version",
       "you'r"
@@ -2284,7 +2102,7 @@
       "name": "AugmentedObject",
       "tags": "AugmentedObject",
       "summary": "",
-      "description": "Augmented ObjectBase class for other classes to extend from",
+      "description": "Augmented Object Base class for other classes to extend from",
       "body": ""
     },
     "AugmentedObject.html#options": {
@@ -2325,7 +2143,7 @@
       "name": "trigger",
       "tags": "AugmentedObject#trigger trigger",
       "summary": "",
-      "description": "Trigger one or many events, firing all bound callbacks. Callbacks arepassed the same arguments as trigger is, apart from the event name(unless you're listening on &quot;all&quot;, which will cause your callback toreceive the true name of the event as the first argument)."
+      "description": "Trigger one or many events, firing all bound callbacks. Callbacks are passed the same arguments as trigger is, apart from the event name (unless you're listening on &quot;all&quot;, which will cause your callback to receive the true name of the event as the first argument)."
     },
     "AugmentedObject.html#once": {
       "id": "AugmentedObject.html#once",
@@ -2335,7 +2153,7 @@
       "name": "once",
       "tags": "AugmentedObject#once once",
       "summary": "",
-      "description": "Bind an event to only be triggered a single time. After the first timethe callback is invoked, its listener will be removed. If multiple eventsare passed in using the space-separated syntax, the handler will fireonce for each event, not once for a combination of all events."
+      "description": "Bind an event to only be triggered a single time. After the first time the callback is invoked, its listener will be removed. If multiple events are passed in using the space-separated syntax, the handler will fire once for each event, not once for a combination of all events."
     },
     "AugmentedObject.html#off": {
       "id": "AugmentedObject.html#off",
@@ -2345,7 +2163,7 @@
       "name": "off",
       "tags": "AugmentedObject#off off",
       "summary": "",
-      "description": "Remove one or many callbacks. If context is null, removes allcallbacks with that function. If callback is null, removes allcallbacks for the event. If name is null, removes all boundcallbacks for all events."
+      "description": "Remove one or many callbacks. If context is null, removes all callbacks with that function. If callback is null, removes all callbacks for the event. If name is null, removes all bound callbacks for all events."
     },
     "AugmentedObject.html#stopListening": {
       "id": "AugmentedObject.html#stopListening",
@@ -2355,7 +2173,7 @@
       "name": "stopListening",
       "tags": "AugmentedObject#stopListening stopListening",
       "summary": "",
-      "description": "Tell this object to stop listening to either specific events ... orto every object it's currently listening to."
+      "description": "Tell this object to stop listening to either specific events ... or to every object it's currently listening to."
     },
     "AugmentedObject.html#on": {
       "id": "AugmentedObject.html#on",
@@ -2365,7 +2183,17 @@
       "name": "on",
       "tags": "AugmentedObject#on on",
       "summary": "",
-      "description": "Bind an event to a callback function. Passing &quot;all&quot; will bindthe callback to all events fired."
+      "description": "Bind an event to a callback function. Passing &quot;all&quot; will bind the callback to all events fired."
+    },
+    "AugmentedObject.html#listenTo": {
+      "id": "AugmentedObject.html#listenTo",
+      "kind": "function",
+      "title": "listenTo( obj, name, callback )",
+      "longname": "AugmentedObject#listenTo",
+      "name": "listenTo",
+      "tags": "AugmentedObject#listenTo listenTo",
+      "summary": "",
+      "description": "Inversion-of-control versions of on. Tell this object to listen to an event in another object... keeping track of what it's listening to for easier unbinding later."
     },
     "AugmentedObject.html#listenToOnce": {
       "id": "AugmentedObject.html#listenToOnce",
@@ -2376,16 +2204,6 @@
       "tags": "AugmentedObject#listenToOnce listenToOnce",
       "summary": "",
       "description": "Inversion-of-control versions of once."
-    },
-    "AugmentedObject.html#listenTo": {
-      "id": "AugmentedObject.html#listenTo",
-      "kind": "function",
-      "title": "listenTo( obj, name, callback )",
-      "longname": "AugmentedObject#listenTo",
-      "name": "listenTo",
-      "tags": "AugmentedObject#listenTo listenTo",
-      "summary": "",
-      "description": "Inversion-of-control versions of on. Tell this object to listen toan event in another object... keeping track of what it's listening tofor easier unbinding later."
     }
   }
 }

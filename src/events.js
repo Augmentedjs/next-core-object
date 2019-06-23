@@ -1,12 +1,17 @@
 // Events
 
-// Regular expression used to split event strings.
+/**
+ * Regular expression used to split event strings.
+ */
 export const EVENT_SPLITTER = /\s+/;
 
-// Iterates over the standard `event, callback` (as well as the fancy multiple
-// space-separated events `"change blur", callback` and jQuery-style event
-// maps `{event: callback}`).
-export const eventsApi = (iteratee, events, name, callback, opts) => {
+/**
+ * Iterates over the standard `event, callback` (as well as the fancy multiple
+ * space-separated events `"change blur", callback` and jQuery-style event
+ * maps `{event: callback}`).
+ */
+export const eventsApi = (iteratee, events, name, callback, ...opts) => {
+  //console.debug("opts", opts);
   let i = 0, names;
   if (name && typeof name === "object") {
     // Handle event maps.
@@ -14,21 +19,23 @@ export const eventsApi = (iteratee, events, name, callback, opts) => {
       opts.context = callback;
     }
     for (names = Object.keys(name); i < names.length; i++) {
-      events = eventsApi(iteratee, events, names[i], name[names[i]], opts);
+      events = eventsApi(iteratee, events, names[i], name[names[i]], ...opts);
     }
   } else if (name && EVENT_SPLITTER.test(name)) {
     // Handle space-separated event names by delegating them individually.
     for (names = name.split(EVENT_SPLITTER); i < names.length; i++) {
-      events = iteratee(events, names[i], callback, opts);
+      events = iteratee(events, names[i], callback, ...opts);
     }
   } else {
     // Finally, standard events.
-    events = iteratee(events, name, callback, opts);
+    events = iteratee(events, name, callback, ...opts);
   }
   return events;
 };
 
-// Guard the `listening` argument from the public API.
+/**
+ * Guard the `listening` argument from the public API.
+ */
 export const internalOn = (obj, name, callback, context, listening) => {
   obj._events = eventsApi(onApi, obj._events || {}, name, callback, {
     context: context,
@@ -43,7 +50,9 @@ export const internalOn = (obj, name, callback, context, listening) => {
   return obj;
 };
 
-// The reducing API that adds a callback to the `events` object.
+/**
+ * The reducing API that adds a callback to the `events` object.
+ */
 export const onApi = (events, name, callback, options) => {
   if (callback) {
     const handlers = events[name] || (events[name] = []);
@@ -56,7 +65,9 @@ export const onApi = (events, name, callback, options) => {
   return events;
 };
 
-// The reducing API that removes a callback from the `events` object.
+/**
+ * The reducing API that removes a callback from the `events` object.
+ */
 export const offApi = (events, name, callback, options) => {
   if (!events) {
     return;
@@ -113,8 +124,10 @@ export const offApi = (events, name, callback, options) => {
   return events;
 };
 
-// Handles triggering the appropriate event callbacks.
-export const triggerApi = (objEvents, name, callback, args) => {
+/**
+ * Handles triggering the appropriate event callbacks.
+ */
+export const triggerApi = (objEvents, name, callback, ...args) => {
   if (objEvents) {
     const events = objEvents[name];
     let allEvents = objEvents.all;
@@ -122,25 +135,21 @@ export const triggerApi = (objEvents, name, callback, args) => {
       allEvents = allEvents.slice();
     }
     if (events) {
-      triggerEvents(events, args);
+      triggerEvents(events, ...args);
     }
     if (allEvents) {
-      triggerEvents(allEvents, [name].concat(args));
+      triggerEvents(allEvents, [name].concat(...args));
     }
   }
   return objEvents;
 };
 
-// A difficult-to-believe, but optimized internal dispatch function for
-// triggering events. Tries to keep the usual cases speedy
-export const triggerEvents = (events, args) => {
+/**
+ * Internal dispatch function for triggering events.
+ */
+export const triggerEvents = (events, ...args) => {
+  //console.debug("triggerEvents", ...args);
   let ev, i = -1;
-  const l = events.length, a1 = args[0], a2 = args[1], a3 = args[2];
-  switch (args.length) {
-    case 0: while (++i < l) (ev = events[i]).callback.call(ev.ctx); return;
-    case 1: while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1); return;
-    case 2: while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1, a2); return;
-    case 3: while (++i < l) (ev = events[i]).callback.call(ev.ctx, a1, a2, a3); return;
-    default: while (++i < l) (ev = events[i]).callback.apply(ev.ctx, args); return;
-  }
+  const l = events.length;
+  while (++i < l) (ev = events[i]).callback.apply(ev.ctx, ...args); return;
 };
