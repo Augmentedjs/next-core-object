@@ -100,7 +100,6 @@ window.lunrData = {
           "name",
           "on",
           "pass",
-          "quot;all&quot",
           "receiv",
           "same",
           "trigger",
@@ -173,8 +172,7 @@ window.lunrData = {
           "fire",
           "function",
           "name",
-          "pass",
-          "quot;all&quot"
+          "pass"
         ],
         "AugmentedObject.html#listenTo": [
           "anoth",
@@ -464,7 +462,7 @@ window.lunrData = {
                   "docs": {
                     "AugmentedObject.html#trigger": {
                       "ref": "AugmentedObject.html#trigger",
-                      "tf": 1.8518518518518516
+                      "tf": 1.9230769230769231
                     }
                   }
                 }
@@ -492,7 +490,7 @@ window.lunrData = {
                         "docs": {
                           "AugmentedObject.html#trigger": {
                             "ref": "AugmentedObject.html#trigger",
-                            "tf": 3.7037037037037033
+                            "tf": 3.8461538461538463
                           }
                         }
                       }
@@ -636,7 +634,7 @@ window.lunrData = {
                         "docs": {
                           "AugmentedObject.html#trigger": {
                             "ref": "AugmentedObject.html#trigger",
-                            "tf": 5.555555555555555
+                            "tf": 5.769230769230769
                           },
                           "AugmentedObject.html#once": {
                             "ref": "AugmentedObject.html#once",
@@ -652,7 +650,7 @@ window.lunrData = {
                           },
                           "AugmentedObject.html#on": {
                             "ref": "AugmentedObject.html#on",
-                            "tf": 43.33333333333333
+                            "tf": 44.44444444444444
                           },
                           "AugmentedObject.html#listenTo": {
                             "ref": "AugmentedObject.html#listenTo",
@@ -675,7 +673,7 @@ window.lunrData = {
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 1.8518518518518516
+                    "tf": 1.9230769230769231
                   }
                 }
               }
@@ -866,7 +864,7 @@ window.lunrData = {
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 37.03703703703703
+                    "tf": 37.179487179487175
                   },
                   "AugmentedObject.html#once": {
                     "ref": "AugmentedObject.html#once",
@@ -939,7 +937,7 @@ window.lunrData = {
                     "docs": {
                       "AugmentedObject.html#trigger": {
                         "ref": "AugmentedObject.html#trigger",
-                        "tf": 1.8518518518518516
+                        "tf": 1.9230769230769231
                       }
                     }
                   }
@@ -1010,7 +1008,7 @@ window.lunrData = {
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 1.8518518518518516
+                    "tf": 1.9230769230769231
                   }
                 }
               }
@@ -1190,7 +1188,7 @@ window.lunrData = {
                     "docs": {
                       "AugmentedObject.html#trigger": {
                         "ref": "AugmentedObject.html#trigger",
-                        "tf": 1.8518518518518516
+                        "tf": 1.9230769230769231
                       },
                       "AugmentedObject.html#once": {
                         "ref": "AugmentedObject.html#once",
@@ -1279,7 +1277,7 @@ window.lunrData = {
                   "docs": {
                     "AugmentedObject.html#trigger": {
                       "ref": "AugmentedObject.html#trigger",
-                      "tf": 1.8518518518518516
+                      "tf": 1.9230769230769231
                     },
                     "AugmentedObject.html#off": {
                       "ref": "AugmentedObject.html#off",
@@ -1302,7 +1300,7 @@ window.lunrData = {
                   },
                   "AugmentedObject.html#on": {
                     "ref": "AugmentedObject.html#on",
-                    "tf": 10
+                    "tf": 11.11111111111111
                   }
                 }
               }
@@ -1345,7 +1343,7 @@ window.lunrData = {
                     },
                     "AugmentedObject.html#trigger": {
                       "ref": "AugmentedObject.html#trigger",
-                      "tf": 5.555555555555555
+                      "tf": 5.769230769230769
                     },
                     "AugmentedObject.html#once": {
                       "ref": "AugmentedObject.html#once",
@@ -1361,7 +1359,7 @@ window.lunrData = {
                     },
                     "AugmentedObject.html#on": {
                       "ref": "AugmentedObject.html#on",
-                      "tf": 10
+                      "tf": 11.11111111111111
                     },
                     "AugmentedObject.html#listenTo": {
                       "ref": "AugmentedObject.html#listenTo",
@@ -1475,7 +1473,7 @@ window.lunrData = {
             "docs": {
               "AugmentedObject.html#trigger": {
                 "ref": "AugmentedObject.html#trigger",
-                "tf": 1.8518518518518516
+                "tf": 1.9230769230769231
               },
               "AugmentedObject.html#off": {
                 "ref": "AugmentedObject.html#off",
@@ -1530,7 +1528,7 @@ window.lunrData = {
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 1.8518518518518516
+                    "tf": 1.9230769230769231
                   },
                   "AugmentedObject.html#off": {
                     "ref": "AugmentedObject.html#off",
@@ -1578,7 +1576,7 @@ window.lunrData = {
                   },
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 1.8518518518518516
+                    "tf": 1.9230769230769231
                   },
                   "AugmentedObject.html#once": {
                     "ref": "AugmentedObject.html#once",
@@ -1586,7 +1584,7 @@ window.lunrData = {
                   },
                   "AugmentedObject.html#on": {
                     "ref": "AugmentedObject.html#on",
-                    "tf": 5
+                    "tf": 5.555555555555555
                   }
                 }
               }
@@ -1631,7 +1629,7 @@ window.lunrData = {
                           },
                           "AugmentedObject.html#on": {
                             "ref": "AugmentedObject.html#on",
-                            "tf": 115
+                            "tf": 115.55555555555556
                           },
                           "AugmentedObject.html#listenTo": {
                             "ref": "AugmentedObject.html#listenTo",
@@ -1657,7 +1655,7 @@ window.lunrData = {
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 1.8518518518518516
+                    "tf": 1.9230769230769231
                   },
                   "AugmentedObject.html#once": {
                     "ref": "AugmentedObject.html#once",
@@ -1665,7 +1663,7 @@ window.lunrData = {
                   },
                   "AugmentedObject.html#on": {
                     "ref": "AugmentedObject.html#on",
-                    "tf": 5
+                    "tf": 5.555555555555555
                   }
                 }
               },
@@ -1675,59 +1673,11 @@ window.lunrData = {
                   "docs": {
                     "AugmentedObject.html#trigger": {
                       "ref": "AugmentedObject.html#trigger",
-                      "tf": 1.8518518518518516
+                      "tf": 1.9230769230769231
                     },
                     "AugmentedObject.html#once": {
                       "ref": "AugmentedObject.html#once",
                       "tf": 1.9230769230769231
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "q": {
-          "docs": {},
-          "u": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                ";": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "l": {
-                      "docs": {},
-                      "l": {
-                        "docs": {},
-                        "&": {
-                          "docs": {},
-                          "q": {
-                            "docs": {},
-                            "u": {
-                              "docs": {},
-                              "o": {
-                                "docs": {},
-                                "t": {
-                                  "docs": {
-                                    "AugmentedObject.html#trigger": {
-                                      "ref": "AugmentedObject.html#trigger",
-                                      "tf": 1.8518518518518516
-                                    },
-                                    "AugmentedObject.html#on": {
-                                      "ref": "AugmentedObject.html#on",
-                                      "tf": 5
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
                     }
                   }
                 }
@@ -1751,7 +1701,7 @@ window.lunrData = {
                       "docs": {
                         "AugmentedObject.html#trigger": {
                           "ref": "AugmentedObject.html#trigger",
-                          "tf": 687.0370370370371
+                          "tf": 687.1794871794872
                         },
                         "AugmentedObject.html#once": {
                           "ref": "AugmentedObject.html#once",
@@ -1769,7 +1719,7 @@ window.lunrData = {
                 "docs": {
                   "AugmentedObject.html#trigger": {
                     "ref": "AugmentedObject.html#trigger",
-                    "tf": 1.8518518518518516
+                    "tf": 1.9230769230769231
                   }
                 }
               }
@@ -1836,7 +1786,7 @@ window.lunrData = {
                     "docs": {
                       "AugmentedObject.html#trigger": {
                         "ref": "AugmentedObject.html#trigger",
-                        "tf": 1.8518518518518516
+                        "tf": 1.9230769230769231
                       }
                     }
                   }
@@ -1882,7 +1832,7 @@ window.lunrData = {
                   "docs": {
                     "AugmentedObject.html#trigger": {
                       "ref": "AugmentedObject.html#trigger",
-                      "tf": 1.8518518518518516
+                      "tf": 1.9230769230769231
                     }
                   }
                 }
@@ -1964,7 +1914,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 143
+      "length": 141
     },
     "corpusTokens": [
       "anoth",
@@ -2030,7 +1980,6 @@ window.lunrData = {
       "onc",
       "option",
       "pass",
-      "quot;all&quot",
       "readm",
       "receiv",
       "remov",
@@ -2143,7 +2092,7 @@ window.lunrData = {
       "name": "trigger",
       "tags": "AugmentedObject#trigger trigger",
       "summary": "",
-      "description": "Trigger one or many events, firing all bound callbacks. Callbacks are passed the same arguments as trigger is, apart from the event name (unless you're listening on &quot;all&quot;, which will cause your callback to receive the true name of the event as the first argument)."
+      "description": "Trigger one or many events, firing all bound callbacks. Callbacks are passed the same arguments as trigger is, apart from the event name (unless you're listening on \"all\", which will cause your callback to receive the true name of the event as the first argument)."
     },
     "AugmentedObject.html#once": {
       "id": "AugmentedObject.html#once",
@@ -2183,7 +2132,7 @@ window.lunrData = {
       "name": "on",
       "tags": "AugmentedObject#on on",
       "summary": "",
-      "description": "Bind an event to a callback function. Passing &quot;all&quot; will bind the callback to all events fired."
+      "description": "Bind an event to a callback function. Passing \"all\" will bind the callback to all events fired."
     },
     "AugmentedObject.html#listenTo": {
       "id": "AugmentedObject.html#listenTo",

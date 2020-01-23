@@ -1,4 +1,3 @@
-const _bind = require("lodash.bind");
 import { once, uniqueId } from "next-core-utilities";
 import { eventsApi, internalOn, offApi, triggerApi } from "./events.js";
 
@@ -98,7 +97,7 @@ class AugmentedObject {
    */
   once(name, callback, context) {
     // Map the event into a `{event: once}` object.
-    const events = eventsApi(this._onceMap, {}, name, callback, _bind(this.off, this));
+    const events = eventsApi(this._onceMap, {}, name, callback, this.off.bind(this));
     if (typeof name === "string" && context == null) {
       callback = void 0;
     }
@@ -201,7 +200,7 @@ class AugmentedObject {
    */
   listenToOnce(obj, name, callback) {
     // Map the event into a `{event: once}` object.
-    const events = eventsApi(this._onceMap, {}, name, callback, _bind(this.stopListening, this, obj));
+    const events = eventsApi(this._onceMap, {}, name, callback, this.stopListening.bind(this, obj));
     return this.listenTo(obj, events);
   };
 

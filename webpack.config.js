@@ -31,12 +31,6 @@ module.exports = {
       commonjs2: 'next-core-utilities',
       amd: 'next-core-utilities',
       root: 'next-core-utilities'
-    },
-    'lodash.bind': {
-      commonjs: 'lodash.bind',
-      commonjs2: 'lodash.bind',
-      amd: 'lodash.bind',
-      root: 'lodash.bind'
     }
   },
   stats: "errors-only",

@@ -1,12 +1,11 @@
 {
   "name": "next-core-object",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "The Augmented.js Next - Object and Events.",
   "main": "dist/next-core-object.js",
   "scripts": {
     "dev": "webpack --mode development --module-bind js=babel-loader --progress",
     "build": "webpack --mode production --module-bind js=babel-loader --progress",
-    "lint": "eslint ./src/index.js",
     "test": "mocha --require babel-core/register --require test/helper.js -c test/*Spec.js",
     "start": "node index.js",
     "docs": "rm -rf jsdoc && jsdoc ./src -r -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json -P ./package.json",
@@ -21,7 +20,7 @@
   },
   "keywords": [
     "augmentedjs",
-    "presentation"
+    "core"
   ],
   "author": "Bob Warren <jedi.master@augmentedjs.com> (http://www.augmentedjs.com)",
   "license": "Apache-2.0",
@@ -32,20 +31,17 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
-    "documentation": "^11.0.1",
-    "eslint": "^6.0.0",
-    "eslint-config-kentcdodds": "^14.3.3",
+    "documentation": "^12.1.4",
     "foodoc": "0.0.9",
-    "jsdoc": "^3.6.2",
-    "jsdom": "^15.1.1",
-    "mocha": "^6.1.4",
+    "jsdoc": "^3.6.3",
+    "jsdom": "^15.2.1",
+    "mocha": "^6.2.2",
     "mocha-jsdom": "^2.0.0",
-    "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.4"
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "lodash.bind": "^4.2.1",
-    "next-core-utilities": "^2.6.1"
+    "next-core-utilities": "^2.8.0"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/next-core-object/issues"
