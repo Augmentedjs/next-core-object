@@ -1,16 +1,16 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   context: __dirname,
   target: "web",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'next-core-object.js',
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, "dist"),
+    filename: "next-core-object.js",
+    publicPath: "/dist/",
     library: "next-core-object",
-    globalObject: 'this',
+    globalObject: "this",
     libraryTarget: "umd",
     umdNamedDefine: true
   },
@@ -26,11 +26,11 @@ module.exports = {
     ]
   },
   externals: {
-    'core-next-utilities': {
-      commonjs: 'next-core-utilities',
-      commonjs2: 'next-core-utilities',
-      amd: 'next-core-utilities',
-      root: 'next-core-utilities'
+    "core-next-utilities": {
+      commonjs: "next-core-utilities",
+      commonjs2: "next-core-utilities",
+      amd: "next-core-utilities",
+      root: "next-core-utilities"
     }
   },
   stats: "errors-only",

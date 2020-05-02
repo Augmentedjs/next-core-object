@@ -9,6 +9,11 @@ export const EVENT_SPLITTER = /\s+/;
  * Iterates over the standard `event, callback` (as well as the fancy multiple
  * space-separated events `"change blur", callback` and jQuery-style event
  * maps `{event: callback}`).
+ * @param {function} iteratee Function to iterate
+ * @param {object} events Event object
+ * @param {string|object} name Name of event or events
+ * @param {function} callback The function to call
+ * @param {any} opts Any other params
  */
 export const eventsApi = (iteratee, events, name, callback, ...opts) => {
   //console.debug("opts", opts);
@@ -35,6 +40,11 @@ export const eventsApi = (iteratee, events, name, callback, ...opts) => {
 
 /**
  * Guard the `listening` argument from the public API.
+ * @param {object} obj Object with events
+ * @param {string|object} name Name of event or events
+ * @param {function} callback The function to call
+ * @param {object} context The context of 'this'
+ * @param {array} listening Array of listeners
  */
 export const internalOn = (obj, name, callback, context, listening) => {
   obj._events = eventsApi(onApi, obj._events || {}, name, callback, {
@@ -52,6 +62,10 @@ export const internalOn = (obj, name, callback, context, listening) => {
 
 /**
  * The reducing API that adds a callback to the `events` object.
+ * @param {object} events Event object
+ * @param {string|object} name Name of event or events
+ * @param {function} callback The function to call
+ * @param {object} options Any options
  */
 export const onApi = (events, name, callback, options) => {
   if (callback) {
@@ -67,6 +81,10 @@ export const onApi = (events, name, callback, options) => {
 
 /**
  * The reducing API that removes a callback from the `events` object.
+ * @param {object} events Event object
+ * @param {string|object} name Name of event or events
+ * @param {function} callback The function to call
+ * @param {object} options Any options
  */
 export const offApi = (events, name, callback, options) => {
   if (!events) {
@@ -126,6 +144,10 @@ export const offApi = (events, name, callback, options) => {
 
 /**
  * Handles triggering the appropriate event callbacks.
+ * @param {object} objEvents Event object
+ * @param {string|object} name Name of event or events
+ * @param {function} callback The function to call
+ * @param {any} args Any other arguments
  */
 export const triggerApi = (objEvents, name, callback, ...args) => {
   if (objEvents) {
@@ -146,6 +168,8 @@ export const triggerApi = (objEvents, name, callback, ...args) => {
 
 /**
  * Internal dispatch function for triggering events.
+ * @param {array} events The events
+ * @param {any} args Any otehr arguments
  */
 export const triggerEvents = (events, ...args) => {
   //console.debug("triggerEvents", ...args);

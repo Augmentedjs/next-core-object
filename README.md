@@ -47,7 +47,12 @@ Augmented.js Next Core - Object and Events
 ## AugmentedObject
 
 Augmented Object
-Base class for other classes to extend from
+Base class for other classes to extend from<br/>
+Supported options:<br/>
+
+<ul>
+<li>events - Event object</li>
+</ul>
 
 ### Parameters
 
@@ -62,6 +67,11 @@ Initialize the object
 -   `args` **...any** 
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns this context
+
+**Meta**
+
+-   **deprecated**: Use the Constructor
+
 
 ### options
 
@@ -190,11 +200,11 @@ maps `{event: callback}`).
 
 ### Parameters
 
--   `iteratee`  
--   `events`  
--   `name`  
--   `callback`  
--   `opts` **...any** 
+-   `iteratee` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Function to iterate
+-   `events` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
+-   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
+-   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
+-   `opts` **any** Any other params
 
 ## internalOn
 
@@ -202,11 +212,11 @@ Guard the `listening` argument from the public API.
 
 ### Parameters
 
--   `obj`  
--   `name`  
--   `callback`  
--   `context`  
--   `listening`  
+-   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Object with events
+-   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
+-   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
+-   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context of 'this'
+-   `listening` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of listeners
 
 ## onApi
 
@@ -214,10 +224,10 @@ The reducing API that adds a callback to the `events` object.
 
 ### Parameters
 
--   `events`  
--   `name`  
--   `callback`  
--   `options`  
+-   `events` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
+-   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
+-   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
+-   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Any options
 
 ## offApi
 
@@ -225,10 +235,10 @@ The reducing API that removes a callback from the `events` object.
 
 ### Parameters
 
--   `events`  
--   `name`  
--   `callback`  
--   `options`  
+-   `events` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
+-   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
+-   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
+-   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Any options
 
 ## triggerApi
 
@@ -236,10 +246,10 @@ Handles triggering the appropriate event callbacks.
 
 ### Parameters
 
--   `objEvents`  
--   `name`  
--   `callback`  
--   `args` **...any** 
+-   `objEvents` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
+-   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
+-   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
+-   `args` **any** Any other arguments
 
 ## triggerEvents
 
@@ -247,5 +257,5 @@ Internal dispatch function for triggering events.
 
 ### Parameters
 
--   `events`  
--   `args` **...any** 
+-   `events` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** The events
+-   `args` **any** Any otehr arguments

@@ -63,8 +63,11 @@ window.lunrData = {
           "augmentedobject",
           "base",
           "class",
+          "event",
           "extend",
-          "object"
+          "object",
+          "option",
+          "support"
         ],
         "AugmentedObject.html#options": [
           "augmentedobject#opt",
@@ -230,7 +233,7 @@ window.lunrData = {
                       "docs": {
                         "AugmentedObject.html": {
                           "ref": "AugmentedObject.html",
-                          "tf": 8.333333333333332
+                          "tf": 4.545454545454546
                         }
                       },
                       "e": {
@@ -611,7 +614,7 @@ window.lunrData = {
                     },
                     "AugmentedObject.html": {
                       "ref": "AugmentedObject.html",
-                      "tf": 126.66666666666666
+                      "tf": 119.0909090909091
                     }
                   }
                 }
@@ -1000,6 +1003,29 @@ window.lunrData = {
               }
             }
           },
+          "u": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "AugmentedObject.html": {
+                          "ref": "AugmentedObject.html",
+                          "tf": 4.545454545454546
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "a": {
             "docs": {},
             "m": {
@@ -1261,7 +1287,7 @@ window.lunrData = {
                 "docs": {
                   "AugmentedObject.html": {
                     "ref": "AugmentedObject.html",
-                    "tf": 8.333333333333332
+                    "tf": 4.545454545454546
                   }
                 }
               }
@@ -1309,26 +1335,6 @@ window.lunrData = {
         },
         "e": {
           "docs": {},
-          "x": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "n": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "AugmentedObject.html": {
-                        "ref": "AugmentedObject.html",
-                        "tf": 8.333333333333332
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "v": {
             "docs": {},
             "e": {
@@ -1337,6 +1343,10 @@ window.lunrData = {
                 "docs": {},
                 "t": {
                   "docs": {
+                    "AugmentedObject.html": {
+                      "ref": "AugmentedObject.html",
+                      "tf": 9.090909090909092
+                    },
                     "AugmentedObject.html#events": {
                       "ref": "AugmentedObject.html#events",
                       "tf": 800
@@ -1364,6 +1374,26 @@ window.lunrData = {
                     "AugmentedObject.html#listenTo": {
                       "ref": "AugmentedObject.html#listenTo",
                       "tf": 3.125
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "x": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "AugmentedObject.html": {
+                        "ref": "AugmentedObject.html",
+                        "tf": 4.545454545454546
+                      }
                     }
                   }
                 }
@@ -1429,7 +1459,7 @@ window.lunrData = {
                     "docs": {
                       "AugmentedObject.html": {
                         "ref": "AugmentedObject.html",
-                        "tf": 8.333333333333332
+                        "tf": 9.090909090909092
                       },
                       "AugmentedObject.html#initialize": {
                         "ref": "AugmentedObject.html#initialize",
@@ -1459,6 +1489,10 @@ window.lunrData = {
                   "docs": {},
                   "n": {
                     "docs": {
+                      "AugmentedObject.html": {
+                        "ref": "AugmentedObject.html",
+                        "tf": 4.545454545454546
+                      },
                       "AugmentedObject.html#options": {
                         "ref": "AugmentedObject.html#options",
                         "tf": 775
@@ -1914,7 +1948,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 141
+      "length": 144
     },
     "corpusTokens": [
       "anoth",
@@ -1991,6 +2025,7 @@ window.lunrData = {
       "specif",
       "stop",
       "stoplisten",
+      "support",
       "syntax",
       "tell",
       "time",
@@ -2051,7 +2086,7 @@ window.lunrData = {
       "name": "AugmentedObject",
       "tags": "AugmentedObject",
       "summary": "",
-      "description": "Augmented Object Base class for other classes to extend from",
+      "description": "Augmented Object Base class for other classes to extend from Supported options: events - Event object",
       "body": ""
     },
     "AugmentedObject.html#options": {

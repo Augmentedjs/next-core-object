@@ -3,7 +3,11 @@ import { eventsApi, internalOn, offApi, triggerApi } from "./events.js";
 
 /**
  * Augmented Object
- * Base class for other classes to extend from
+ * Base class for other classes to extend from<br/>
+ * Supported options:<br/>
+ * <ul>
+ * <li>events - Event object</li>
+ * </ul>
  * @param {object} options Object options
  */
 class AugmentedObject {
@@ -29,6 +33,7 @@ class AugmentedObject {
 
   /**
    * Initialize the object
+   * @deprecated Use the Constructor
    * @returns {object} Returns this context
    */
   initialize(...args) {
@@ -73,12 +78,7 @@ class AugmentedObject {
     //console.log("trigger: name", name);
     //console.log("trigger: args", args);
     if (this._events) {
-      //const length = Math.max(0, args.length - 1);
-      const argsA = (Array.isArray(args)) ? args : (Array.from(args));//(length);
-      //let i = 0;
-      //for (i = 0; i < length; i++) {
-      //  argsA[i] = args[i + 1];
-      //}
+      const argsA = (Array.isArray(args)) ? args : (Array.from(args));
       //console.log(`calling eventsApi(${triggerApi}, ${this._events}, ${name}, ${void 0}, ${argsA});`);
       eventsApi(triggerApi, this._events, name, void 0, argsA);
     }
@@ -204,8 +204,9 @@ class AugmentedObject {
     return this.listenTo(obj, events);
   };
 
-  /** Reduces the event callbacks into a map of `{event: onceWrapper}`.
-   *  `offer` unbinds the `onceWrapper` after it has been called.
+  /**
+   * Reduces the event callbacks into a map of `{event: onceWrapper}`.
+   * `offer` unbinds the `onceWrapper` after it has been called.
    * @private
    */
   _onceMap(map, name, callback, offer) {
