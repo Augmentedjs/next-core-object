@@ -159,7 +159,7 @@ for easier unbinding later.
 
 #### Parameters
 
--   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The object to stop listening to
+-   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The object to listening to
 -   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
 -   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
 

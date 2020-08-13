@@ -167,7 +167,7 @@ class AugmentedObject {
    * Inversion-of-control versions of `on`. Tell *this* object to listen to
    * an event in another object... keeping track of what it's listening to
    * for easier unbinding later.
-   * @param {object} obj The object to stop listening to
+   * @param {object} obj The object to listening to
    * @param {string} name The name of the event
    * @param {function} callback The callback to evoke
    * @returns {object} Returns this context

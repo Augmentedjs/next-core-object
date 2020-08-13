@@ -200,7 +200,11 @@
 </ul>
 <h2>AugmentedObject</h2>
 <p>Augmented Object<br>
-Base class for other classes to extend from</p>
+Base class for other classes to extend from<br/><br>
+Supported options:<br/></p>
+<ul>
+<li>events - Event object</li>
+</ul>
 <h3>Parameters</h3>
 <ul>
 <li><code>options</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Object options</li>
@@ -212,6 +216,10 @@ Base class for other classes to extend from</p>
 <li><code>args</code> <strong>...any</strong></li>
 </ul>
 <p>Returns <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Returns this context</p>
+<p><strong>Meta</strong></p>
+<ul>
+<li><strong>deprecated</strong>: Use the Constructor</li>
+</ul>
 <h3>options</h3>
 <p>The passed options</p>
 <h3>events</h3>
@@ -277,7 +285,7 @@ an event in another object... keeping track of what it's listening to<br>
 for easier unbinding later.</p>
 <h4>Parameters</h4>
 <ul>
-<li><code>obj</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> The object to stop listening to</li>
+<li><code>obj</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> The object to listening to</li>
 <li><code>name</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></strong> The name of the event</li>
 <li><code>callback</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></strong> The callback to evoke</li>
 </ul>
@@ -308,55 +316,55 @@ space-separated events <code>&quot;change blur&quot;, callback</code> and jQuery
 maps <code>{event: callback}</code>).</p>
 <h3>Parameters</h3>
 <ul>
-<li><code>iteratee</code></li>
-<li><code>events</code></li>
-<li><code>name</code></li>
-<li><code>callback</code></li>
-<li><code>opts</code> <strong>...any</strong></li>
+<li><code>iteratee</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></strong> Function to iterate</li>
+<li><code>events</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Event object</li>
+<li><code>name</code> <strong>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</strong> Name of event or events</li>
+<li><code>callback</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></strong> The function to call</li>
+<li><code>opts</code> <strong>any</strong> Any other params</li>
 </ul>
 <h2>internalOn</h2>
 <p>Guard the <code>listening</code> argument from the public API.</p>
 <h3>Parameters</h3>
 <ul>
-<li><code>obj</code></li>
-<li><code>name</code></li>
-<li><code>callback</code></li>
-<li><code>context</code></li>
-<li><code>listening</code></li>
+<li><code>obj</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Object with events</li>
+<li><code>name</code> <strong>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</strong> Name of event or events</li>
+<li><code>callback</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></strong> The function to call</li>
+<li><code>context</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> The context of 'this'</li>
+<li><code>listening</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></strong> Array of listeners</li>
 </ul>
 <h2>onApi</h2>
 <p>The reducing API that adds a callback to the <code>events</code> object.</p>
 <h3>Parameters</h3>
 <ul>
-<li><code>events</code></li>
-<li><code>name</code></li>
-<li><code>callback</code></li>
-<li><code>options</code></li>
+<li><code>events</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Event object</li>
+<li><code>name</code> <strong>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</strong> Name of event or events</li>
+<li><code>callback</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></strong> The function to call</li>
+<li><code>options</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Any options</li>
 </ul>
 <h2>offApi</h2>
 <p>The reducing API that removes a callback from the <code>events</code> object.</p>
 <h3>Parameters</h3>
 <ul>
-<li><code>events</code></li>
-<li><code>name</code></li>
-<li><code>callback</code></li>
-<li><code>options</code></li>
+<li><code>events</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Event object</li>
+<li><code>name</code> <strong>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</strong> Name of event or events</li>
+<li><code>callback</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></strong> The function to call</li>
+<li><code>options</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Any options</li>
 </ul>
 <h2>triggerApi</h2>
 <p>Handles triggering the appropriate event callbacks.</p>
 <h3>Parameters</h3>
 <ul>
-<li><code>objEvents</code></li>
-<li><code>name</code></li>
-<li><code>callback</code></li>
-<li><code>args</code> <strong>...any</strong></li>
+<li><code>objEvents</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></strong> Event object</li>
+<li><code>name</code> <strong>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</strong> Name of event or events</li>
+<li><code>callback</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a></strong> The function to call</li>
+<li><code>args</code> <strong>any</strong> Any other arguments</li>
 </ul>
 <h2>triggerEvents</h2>
 <p>Internal dispatch function for triggering events.</p>
 <h3>Parameters</h3>
 <ul>
-<li><code>events</code></li>
-<li><code>args</code> <strong>...any</strong></li>
+<li><code>events</code> <strong><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></strong> The events</li>
+<li><code>args</code> <strong>any</strong> Any otehr arguments</li>
 </ul></article>
 		</section>
 			</div>
@@ -367,7 +375,7 @@ maps <code>{event: callback}</code>).</p>
 	</div>
 	<footer>
 				<div class="footer-option"><a href='http://www.augmentedjs.com'>Augmented.js Homepage</a></div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Fri May 1st 2020 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.5</a> on Thu Aug 13th 2020 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
