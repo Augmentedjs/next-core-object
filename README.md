@@ -8,41 +8,41 @@ Augmented.js Next Core - Object and Events
 
 ### Table of Contents
 
--   [AugmentedObject](#augmentedobject)
-    -   [Parameters](#parameters)
-    -   [initialize](#initialize)
-        -   [Parameters](#parameters-1)
-    -   [options](#options)
-    -   [events](#events)
-    -   [trigger](#trigger)
-        -   [Parameters](#parameters-2)
-    -   [once](#once)
-        -   [Parameters](#parameters-3)
-    -   [off](#off)
-        -   [Parameters](#parameters-4)
-    -   [stopListening](#stoplistening)
-        -   [Parameters](#parameters-5)
-    -   [on](#on)
-        -   [Parameters](#parameters-6)
-    -   [listenTo](#listento)
-        -   [Parameters](#parameters-7)
-    -   [listenToOnce](#listentoonce)
-        -   [Parameters](#parameters-8)
--   [Configuration](#configuration)
-    -   [Properties](#properties)
--   [EVENT_SPLITTER](#event_splitter)
--   [eventsApi](#eventsapi)
-    -   [Parameters](#parameters-9)
--   [internalOn](#internalon)
-    -   [Parameters](#parameters-10)
--   [onApi](#onapi)
-    -   [Parameters](#parameters-11)
--   [offApi](#offapi)
-    -   [Parameters](#parameters-12)
--   [triggerApi](#triggerapi)
-    -   [Parameters](#parameters-13)
--   [triggerEvents](#triggerevents)
-    -   [Parameters](#parameters-14)
+*   [AugmentedObject](#augmentedobject)
+    *   [Parameters](#parameters)
+    *   [initialize](#initialize)
+        *   [Parameters](#parameters-1)
+    *   [options](#options)
+    *   [events](#events)
+    *   [trigger](#trigger)
+        *   [Parameters](#parameters-2)
+    *   [once](#once)
+        *   [Parameters](#parameters-3)
+    *   [off](#off)
+        *   [Parameters](#parameters-4)
+    *   [stopListening](#stoplistening)
+        *   [Parameters](#parameters-5)
+    *   [on](#on)
+        *   [Parameters](#parameters-6)
+    *   [listenTo](#listento)
+        *   [Parameters](#parameters-7)
+    *   [listenToOnce](#listentoonce)
+        *   [Parameters](#parameters-8)
+*   [Configuration](#configuration)
+    *   [Properties](#properties)
+*   [EVENT_SPLITTER](#event_splitter)
+*   [eventsApi](#eventsapi)
+    *   [Parameters](#parameters-9)
+*   [internalOn](#internalon)
+    *   [Parameters](#parameters-10)
+*   [onApi](#onapi)
+    *   [Parameters](#parameters-11)
+*   [offApi](#offapi)
+    *   [Parameters](#parameters-12)
+*   [triggerApi](#triggerapi)
+    *   [Parameters](#parameters-13)
+*   [triggerEvents](#triggerevents)
+    *   [Parameters](#parameters-14)
 
 ## AugmentedObject
 
@@ -56,7 +56,7 @@ Supported options:<br/>
 
 ### Parameters
 
--   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Object options
+*   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Object options
 
 ### initialize
 
@@ -64,14 +64,13 @@ Initialize the object
 
 #### Parameters
 
--   `args` **...any** 
+*   `args` **...any** 
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns this context
 
 **Meta**
 
--   **deprecated**: Use the Constructor
-
+*   **deprecated**: Use the Constructor
 
 ### options
 
@@ -90,8 +89,8 @@ receive the true name of the event as the first argument).
 
 #### Parameters
 
--   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
--   `args` **any** any number of additional arguments
+*   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
+*   `args` **any** any number of additional arguments
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns this context
 
@@ -104,9 +103,9 @@ once for each event, not once for a combination of all events.
 
 #### Parameters
 
--   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
--   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context of the callback
+*   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
+*   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context of the callback
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns this context
 
@@ -119,9 +118,9 @@ callbacks for all events.
 
 #### Parameters
 
--   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
--   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context of the callback
+*   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
+*   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context of the callback
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns this context
 
@@ -132,9 +131,9 @@ to every object it's currently listening to.
 
 #### Parameters
 
--   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The object to stop listening to
--   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
+*   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The object to stop listening to
+*   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns this context
 
@@ -145,23 +144,23 @@ the callback to all events fired.
 
 #### Parameters
 
--   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
--   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context of the callback
+*   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
+*   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context of the callback
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns this context
 
 ### listenTo
 
-Inversion-of-control versions of `on`. Tell _this_ object to listen to
+Inversion-of-control versions of `on`. Tell *this* object to listen to
 an event in another object... keeping track of what it's listening to
 for easier unbinding later.
 
 #### Parameters
 
--   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The object to listening to
--   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
+*   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The object to listening to
+*   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns this context
 
@@ -171,9 +170,9 @@ Inversion-of-control versions of `once`.
 
 #### Parameters
 
--   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The object to stop listening to
--   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
+*   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The object to stop listening to
+*   `name` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The name of the event
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The callback to evoke
 
 Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Returns this context
 
@@ -183,10 +182,10 @@ A set of configuration properties for the framework
 
 ### Properties
 
--   `LoggerLevel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The level of the framework internal logger
--   `MessageBundle` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** the base name for messages in the framework (default: Messages)
--   `AsynchronousQueueTimeout` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** the default milisecond timeout (default: 2000)
--   `ApplicationInitProcessTimeout` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** the application init even timeout (default: 1000)
+*   `LoggerLevel` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The level of the framework internal logger
+*   `MessageBundle` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** the base name for messages in the framework (default: Messages)
+*   `AsynchronousQueueTimeout` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** the default milisecond timeout (default: 2000)
+*   `ApplicationInitProcessTimeout` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** the application init even timeout (default: 1000)
 
 ## EVENT_SPLITTER
 
@@ -200,11 +199,11 @@ maps `{event: callback}`).
 
 ### Parameters
 
--   `iteratee` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Function to iterate
--   `events` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
--   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
--   `opts` **any** Any other params
+*   `iteratee` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Function to iterate
+*   `events` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
+*   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
+*   `opts` **any** Any other params
 
 ## internalOn
 
@@ -212,11 +211,11 @@ Guard the `listening` argument from the public API.
 
 ### Parameters
 
--   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Object with events
--   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
--   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context of 'this'
--   `listening` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of listeners
+*   `obj` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Object with events
+*   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
+*   `context` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** The context of 'this'
+*   `listening` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of listeners
 
 ## onApi
 
@@ -224,10 +223,10 @@ The reducing API that adds a callback to the `events` object.
 
 ### Parameters
 
--   `events` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
--   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
--   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Any options
+*   `events` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
+*   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
+*   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Any options
 
 ## offApi
 
@@ -235,10 +234,10 @@ The reducing API that removes a callback from the `events` object.
 
 ### Parameters
 
--   `events` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
--   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
--   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Any options
+*   `events` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
+*   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
+*   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Any options
 
 ## triggerApi
 
@@ -246,10 +245,10 @@ Handles triggering the appropriate event callbacks.
 
 ### Parameters
 
--   `objEvents` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
--   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
--   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
--   `args` **any** Any other arguments
+*   `objEvents` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Event object
+*   `name` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** Name of event or events
+*   `callback` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** The function to call
+*   `args` **any** Any other arguments
 
 ## triggerEvents
 
@@ -257,5 +256,5 @@ Internal dispatch function for triggering events.
 
 ### Parameters
 
--   `events` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** The events
--   `args` **any** Any otehr arguments
+*   `events` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** The events
+*   `args` **any** Any otehr arguments

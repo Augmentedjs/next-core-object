@@ -1,6 +1,6 @@
-import once from "../node_modules/next-core-utilities/src/once.js";
-import uniqueId from "../node_modules/next-core-utilities/src/uniqueId.js";
-// import { once, uniqueId } from "next-core-utilities";
+// import once from "../node_modules/next-core-utilities/src/once.js";
+// import uniqueId from "../node_modules/next-core-utilities/src/uniqueId.js";
+import { once, uniqueId } from "next-core-utilities";
 import { eventsApi, internalOn, offApi, triggerApi } from "./events.js";
 
 /**
